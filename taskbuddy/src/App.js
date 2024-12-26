@@ -6,6 +6,7 @@ import ProgressTracker from "./components/ProgressTracker";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [taskHistory, setTaskHistory] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
